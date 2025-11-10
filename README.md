@@ -1,4 +1,4 @@
-# 🇧🇷 💻 JORNADA DE CIÊNCIA DE DADOS COM PYTHON 💻
+# 🇧🇷 💻 JORNADA CIÊNCIA DE DADOS COM PYTHON 💻
 **_Nesse repositório, irei mostrar a minha evolução gradativa com Ciência de Dados no Python!_**
 
 ## 📚 DINÂMICA PRINCIPAL 📚
