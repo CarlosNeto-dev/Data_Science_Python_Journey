@@ -12,7 +12,7 @@
 * _Explicar os Exercícios de forma didática e simples;_
 * _Criar projetos coerentes para esse repositório._
 
-## ⚠ AVISO FINAL ⚠ 
+## ⚠ AVISO FINAL ⚠
 **Estou aprendendo Ciência de Dados. Logo, qualquer erro que eu cometer nos meus códigos ou explicações, por favor, corrija-me. Pois fará eu ser melhor!**
 
 
