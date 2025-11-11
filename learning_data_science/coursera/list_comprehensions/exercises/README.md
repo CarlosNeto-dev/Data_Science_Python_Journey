@@ -1,0 +1,11 @@
+# 📚 🇧🇷 EXERCITANDO LIST COMPREHENSION NO PYTHON 📚
+**_Nessa pasta, iremos exercitar o list comprehension no Python_**
+
+## ⚠️ AVISO ⚠️
+**_Estou estudando Ciência de Dados, logo, qualquer erro que eu cometer, corrija-me, pois me fará ser melhor._**
+
+# 📚 🇺🇸 EXERCISING LIST COMPREHENSION IN PYTHON 📚
+**_In this folder, we will exercise the list comprehension in Python_**
+
+## ⚠️ WARNING ⚠️
+**_I am studying Data Science, so if I make any mistakes, please correct me, as it will help me improve._**
