@@ -1,0 +1,13 @@
+# Ignorar arquivos do PyCharm e IDEs da JetBrains
+.idea/
+
+# Ignorar o ambiente virtual Python
+venv/
+.venv/
+
+# Ignorar caches e compilações Python
+__pycache__/
+*.pyc
+
+# Ignorar arquivos de metadados do macOS
+.DS_Store
