@@ -1,4 +1,4 @@
-#Fazer o quadrado de um número utilizando a função lambda no Python
+# Fazer o quadrado de um número utilizando a função lambda no Python
 
 try:
     num = float(input("Type a number: ").strip())
