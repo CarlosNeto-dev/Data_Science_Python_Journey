@@ -10,6 +10,6 @@ age_organized = sorted(students, key=lambda student: student["age"], reverse=Tru
 print("+=" * 30)
 print("RANKING OF STUDENTS HAVE MORE AGE ".center(60))
 print("+=" * 30)
-for c, e in enumerate(age_organized, start=1):
-    print(f"{c} - {e}")
+for c, s in enumerate(age_organized, start=1):
+    print(f"{c} - {s}")
 print("+=" * 30)
