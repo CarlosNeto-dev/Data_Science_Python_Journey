@@ -1,4 +1,4 @@
-"""This archive talks about my ninth exercise about numpy library!"""
+"""This archive talks about my ninth exercise of numpy library!"""
 import numpy as np
 
 # Criando dois arrays 1D...

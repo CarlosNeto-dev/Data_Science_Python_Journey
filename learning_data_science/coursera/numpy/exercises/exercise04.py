@@ -1,4 +1,4 @@
-"""This archive talks about my fourth exercise about numpy library!"""
+"""This archive talks about my fourth exercise of numpy library!"""
 import numpy as np
 
 # Qual a diferença prática entre:

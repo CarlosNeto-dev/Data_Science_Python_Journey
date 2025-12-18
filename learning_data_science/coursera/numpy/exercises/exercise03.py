@@ -1,4 +1,4 @@
-"""This archive talks about my third exercise about numpy library!"""
+"""This archive talks about my third exercise of numpy library!"""
 import numpy as np
 
 # Criando os seguintes arrays:

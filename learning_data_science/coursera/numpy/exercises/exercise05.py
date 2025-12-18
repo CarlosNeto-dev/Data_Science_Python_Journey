@@ -1,4 +1,4 @@
-"""This archive talks about my fifth exercise about numpy library!"""
+"""This archive talks about my fifth exercise of numpy library!"""
 import numpy as np
 
 # Criando um array 2D...
