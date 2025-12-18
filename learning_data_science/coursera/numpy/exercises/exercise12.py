@@ -1,22 +1,32 @@
 """This archive talks about my twelfth exercise of numpy library!"""
 import numpy as np
 
-# Criando dois arrays...
-A = np.array([
-    [1, 2, 3],
-    [4, 5, 6]])
-B = np.array([1, 0, 1])
+def main():
+    """Main program execution"""
 
-# Verificando os shapes dos Arrays "A" e "B"...
+    a = np.array([
+        [1, 2, 3],
+        [4, 5, 6]
+    ])
+    b = np.array([1, 0, 1])
 
-print(A.shape)
-print("------------------")
-print(B.shape) # Durante o cálculo, o numpy entenderá (1, 3), sendo compatível.
-print("------------------")
+    print(f"a shape: {a.shape}")
+    print("=" * 20)
+    print(f"b shape: {b.shape}") # Para o Dot Product, entenderá (1, 3)
+    print("=" * 20)
 
-# Fazendo Dot Product de A @ B...
+    # Dot Product Compatível
+    print(a @ b)
 
-print(A @ B)
+    print("=" * 20)
 
-# Isso funcionou, pois o número de colunas de A igualam o número de linhas de B.
-# Se fizéssemos B @ A, daria errado. Pois não seria compatível segundo a regra.
+    # Dot Product Incompatível
+    try:
+        print(b @ a)
+
+    except ValueError as error:
+        print(f"Dot Product Incompatibility: {error}")
+
+
+if __name__ == "__main__":
+    main()

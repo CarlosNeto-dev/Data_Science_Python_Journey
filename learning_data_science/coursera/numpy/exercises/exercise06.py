@@ -1,21 +1,31 @@
 """This archive talks about my sixth exercise of numpy library!"""
 import numpy as np
 
-# Criando um array 2D...
-A = np.array([
-    [10, 20, 30],
-    [40, 50, 60],
-    [70, 80, 90]
-])
+def main():
+    """Main program execution"""
 
-# Usando Boolean Mask e Slicing:
+    a = np.array([
+        [10, 20, 30],
+        [40, 50, 60],
+        [70, 80, 90]
+    ])
 
-# Slicing
-CHANGING_VALUE = A[1, :] = 0
-print(A) # Retorna-se uma "view" do Array "A".
-print("-------------")
+    # Slicing --> View
+    changing_value_to_zero = a[1, :]
+    changing_value_to_zero[:] = 0
 
-# Boolean Mask
-CHANGING_VALUE2 = A[A > 50]
-COPYING_VALUES = CHANGING_VALUE2[:] = -1
-print(A) # Retorna-se uma "copy" do Array "A"
+    print(changing_value_to_zero) # View
+    print("=" * 20)
+
+    # Fancy Indexing --> Copy
+    changing_value_to_minus_one = a[a > 50]
+    changing_value_to_minus_one[:] = -1
+
+    print(changing_value_to_minus_one) # Copy
+    print("=" * 20)
+
+    print(a)
+
+
+if __name__ == "__main__":
+    main()

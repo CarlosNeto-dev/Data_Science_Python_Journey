@@ -1,19 +1,32 @@
 """This archive talks about my eleventh exercise of numpy library!"""
 import numpy as np
 
-# Qual desses arrays são compatíveis para a realização de uma operação aritmética?
+def main():
+    """Main program execution"""
 
-A = np.ones((4, 3))
-B = np.array([1, 2, 3])
-C = np.array([1, 2])
+    a = np.ones((4, 3))
+    b = np.array([1, 2, 3])
+    c = np.array([1, 2])
 
-# Verificando os shapes de cada array...
-print(A.shape)
-print("----------")
-print(B.shape)
-print("----------")
-print(C.shape)
-print("----------")
+    print(f"a shape: {a.shape}")
+    print("=" * 20)
+    print(f"b shape: {b.shape}")
+    print("=" * 20)
+    print(f"c shape: {c.shape}")
+    print("=" * 20)
 
-# A única operação compatível seria A + B. Pois seguem a regra de compatibilidade.
-print(A + B)
+    # Broadcasting Compatível
+    print(a + b)
+
+    print("=" * 20)
+
+    # Broadcasting Incompatível
+    try:
+        print(a + c)
+
+    except ValueError as error:
+        print(f"Broadcasting Error: {error}")
+
+
+if __name__ == "__main__":
+    main()

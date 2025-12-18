@@ -1,33 +1,39 @@
 """This archive talks about my ninth exercise of numpy library!"""
 import numpy as np
 
-# Criando dois arrays 1D...
-A = np.array([1, 2, 3])
-B = np.array([4, 5, 6])
+def basic_array_operations(array_one, array_two):
+    """
+    Prints basic element-wise arithmetic operations between two NumPy arrays.
 
-# Fazendo Operações Aritméticas Básicas...
-ADDITION = A + B
-print(ADDITION)
-print("--------------")
+    :param array_one: First Numpy array to be used
+    :param array_two: Second Numpy array to be used
+    :return: None
+    """
 
-SUBTRACTION = A - B
-print(SUBTRACTION)
-print("--------------")
+    print(f"Sum operation: {array_one + array_two}")
+    print("=" * 40)
 
-MULTIPLICATION = A * B
-print(MULTIPLICATION)
-print("--------------")
+    print(f"Subtraction operation: {array_one - array_two}")
+    print("=" * 40)
 
-DIVISION = A / B
-print(DIVISION)
-print("--------------")
+    print(f"Multiplication operation: {array_one * array_two}")
+    print("=" * 40)
 
-EXPONENTIATION = A ** B
-print(EXPONENTIATION)
-print("--------------")
+    print(f"Division operation: {array_one / array_two}")
+    print("=" * 40)
 
-# Por que isso é mais rápido do que um loop comum no Python?
+    print(f"Exponentiation operation: {array_one ** array_two}")
+    print("=" * 40)
 
-# Os dados são armazenadas de forma contígua e linear na memória;
-# Não há a necessidade de checar o tipo de cada elemento no array;
-# É feita de elemento para elemento.
+
+def main():
+    """Main program execution"""
+
+    a = np.array([1, 2, 3])
+    b = np.array([4, 5, 6])
+
+    basic_array_operations(a, b)
+
+
+if __name__ == "__main__":
+    main()

@@ -1,26 +1,35 @@
 """This archive talks about my fifth exercise of numpy library!"""
 import numpy as np
 
-# Criando um array 2D...
-A = np.array([
-    [10, 20, 30],
-    [40, 50, 60],
-    [70, 80, 90]
-])
+def main():
+    """The main logical of program"""
 
-# Usando Fatiamento (Slicing) e Indexação (Indexing):
+    a = np.array([
+        [10, 20, 30],
+        [40, 50, 60],
+        [70, 80, 90]
+    ])
 
-FOUNDING_VALUE_50 = A[1, 1]
-print(FOUNDING_VALUE_50)
-print("--------------")
+    founding_value_fifteen = a[1, 1]
 
-FIRST_ROW = A[0, :]
-print(FIRST_ROW)
-print("--------------")
+    print(founding_value_fifteen)
+    print("=" * 20)
 
-LAST_COLUMN = A[:, -1]
-print(LAST_COLUMN)
-print("--------------")
+    first_row_of_array = a[0, :]
 
-SUBMATRIX = A[:2, 1:3]
-print(SUBMATRIX)
+    print(first_row_of_array)
+    print("=" * 20)
+
+    last_column_of_array = a[:, -1]
+
+    print(last_column_of_array)
+    print("=" * 20)
+
+    submatrix_of_array = a[0:2, 0:2]
+
+    print(submatrix_of_array)
+    print("=" * 20)
+
+
+if __name__ == "__main__":
+    main()

@@ -1,17 +1,22 @@
 """This archive talks about my fifteen exercise of numpy library!"""
 import numpy as np
 
-# Importando informações do arquivo CSV
+def main():
+    """Main program execution"""
 
-DATA = np.genfromtxt("exercise_archive", delimiter=",", skip_header=1)
-print(DATA)
+    archive_data = np.genfromtxt("exercise_archive", delimiter=",", skip_header=1)
 
-# Papel das funcionalidades do "genfromtxt":
+    print(archive_data)
+    print("=" * 25)
 
-# delimiter -⇾ É responsável por buscar o separador de cada frase, se for errado, retorna nan.
-# skip_header -⇾ Ele pula uma determinada linha do arquivo.
+    # Delimiter Incompatível
+    print(np.genfromtxt("exercise_archive", delimiter=";", skip_header=1))
+    print("=" * 25)
 
-# Por que retornou "nan"?
+    # Sem skip_header
+    print(np.genfromtxt("exercise_archive", delimiter=","))
+    print("=" * 25)
 
-# É retornado "nan" três vezes. Pois não é possível converter valores não numéricos
-# O numpy não é ideal para isso, é melhor usar o PANDAS nesses casos.
+
+if __name__ == "__main__":
+    main()

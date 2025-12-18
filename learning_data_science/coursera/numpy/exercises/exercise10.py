@@ -1,15 +1,19 @@
 """This archive talks about my tenth exercise of numpy library!"""
 import numpy as np
 
-# Criando arrays...
-A = np.ones((3, 3))
-B = np.array([1, 2, 3])
+def main():
+    """Main program execution"""
 
-# Fazendo Broadcasting...
+    a = np.ones((3, 3))
+    b = np.array([1, 2, 3])
 
-# Verificando se é compatível os shapes dos arrays "A" e "B":
-print(A.shape)
-print(B.shape) # Durante o cálculo, o numpy irá extender o shape para (1, 3), sendo compatível.
-print("--------------")
+    print(f"a shape: {a.shape}")
+    print(f"b shape: {b.shape}") # Entenderá (1, 3) para o broadcasting.
 
-print(A + B) # Não dá erro, pois os valores lidos da direita para a esquerda são iguais.
+    print("=" * 20)
+
+    print(a + b)
+
+
+if __name__ == "__main__":
+    main()

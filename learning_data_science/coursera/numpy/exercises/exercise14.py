@@ -1,13 +1,24 @@
 """This archive talks about my fourteen exercise of numpy library!"""
 import numpy as np
 
-# Criando um array 1D aleatório...
-A = np.random.rand(12, )
+def main():
+    """Main program execution"""
 
-# Fazendo reshape()...
-print(A.reshape(3, 4))
-print("----------------------------------------------------")
-print(A.reshape(2, 2, 3))
+    a = np.random.rand(12, )
 
-# Para fazer um reshape, é necessário ser compatível segundo a regra.
-# Ou seja, é necessário ter a mesma composição distribuídos entre si.
+    # Reshapes Compatíveis
+    print(a.reshape(3, 4))
+    print("=" * 60)
+    print(a.reshape(2, 2, 3))
+    print("=" * 60)
+
+    # Reshape Incompatível
+    try:
+        print(a.reshape(4, 4))
+
+    except ValueError as error:
+        print(f"Incompatible reshape: {error}")
+
+
+if __name__ == "__main__":
+    main()

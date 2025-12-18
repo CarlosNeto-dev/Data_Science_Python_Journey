@@ -1,22 +1,29 @@
 """This archive talks about my thirteen exercise of numpy library!"""
 import numpy as np
 
-# Criando dois arrays aleatórios...
+def main():
+    """Main program execution"""
 
-A = np.random.rand(2, 3, 4)
-B = np.random.rand(2, 4, 5)
+    a = np.random.rand(2, 3, 4)
+    b = np.random.rand(2, 4, 5)
 
-# Verificando os shapes dos Arrays "A" e "B"...
+    print(f"a shape: {a.shape}")
+    print("=" * 20)
+    print(f"b shape: {b.shape}")
+    print("=" * 20)
 
-print(A.shape)
-print("------------------")
-print(B.shape)
-print("------------------")
+    # Dot Product Compatível
+    print(a @ b)
 
-# São compatíveis, pois:
-# O número de colunas de A igualam o número de linhas de B.
-# O eixo anterior dos Arrays "A" e "B" são compatíveis via broadcasting.
+    print("=" * 20)
 
-# Fazendo Dot Product de A @ B...
+    # Dot Product Incompatível
+    try:
+        print(b @ a)
 
-print(A @ B)
+    except ValueError as error:
+        print(f"Dot Product Incompatibility: {error}")
+
+
+if __name__ == "__main__":
+    main()

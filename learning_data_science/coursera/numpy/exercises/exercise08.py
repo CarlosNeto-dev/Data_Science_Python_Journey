@@ -1,18 +1,31 @@
 """This archive talks about my eighth exercise of numpy library!"""
 import numpy as np
 
-# Criando um array 1D...
-A = np.array([10, 15, 20, 25, 30, 35])
+def main():
+    """Main program execution"""
 
-# Usando Indexing...
-ODD_VALUES = A[A % 2 == 0]
-print(A) # Retornou uma "copy"
-print("----------------")
+    a = np.array([10, 15, 20, 25, 30, 35])
 
-FILTERED_VALUES = A[A > 25]
-MASK = FILTERED_VALUES[:] = 100
-print(A) # Retornou uma "copy"
-print("----------------")
+    # Boolean Mask --> Copy
+    even_values = a[a % 2 == 0]
 
-CHOOSED_NUMBERS = A[[0, 2, 4]]
-print(A) # Retornou uma "copy"
+    print(even_values) # Copy
+    print("=" * 20)
+
+    filtered_values = a[a > 25]
+    filtered_values[:] = 100
+
+    print(filtered_values) # Copy
+    print("=" * 20)
+
+    # Fancy Indexing --> Copy
+    chosen_numbers = a[[0, 2, 4]]
+
+    print(chosen_numbers) # Copy
+    print("=" * 20)
+
+    print(a)
+
+
+if __name__ == "__main__":
+    main()

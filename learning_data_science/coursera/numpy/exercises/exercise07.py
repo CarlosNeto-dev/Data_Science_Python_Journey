@@ -1,15 +1,29 @@
-"""This archive talks about my seventh exercise of numpy library!"""
+"""This archive talks about my ninth exercise of NumPy library."""
 import numpy as np
 
-# Criando o primeiro array 1D...
-A = np.array([
-    1, 2, 3, 4, 5, 6, 7, 8, 9, 10
-])
-CHANGING_ARRAY_A = A[5:] = 0
-print(A) # Retorna-se uma "view"
+def main():
+    """Main program execution."""
 
-# Criando o segundo array 1D...
-B = np.arange(0, 6)
-FANCY_INDEXING = B[[1, 0, 4, 2]]
-COPYING_VALUES = FANCY_INDEXING[:] = 0
-print(B) # Retorna-se uma "copy"
+    # Example with slicing (creates a view)
+    a = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+
+    slice_a = a[0:6]   # view
+    slice_a[:] = 0    # modifies original array
+
+    print(slice_a)
+    print(a)
+
+    print("+=" * 20)
+
+    # Example with fancy indexing (creates a copy)
+    b = np.array([0, 1, 2, 3, 4, 5])
+
+    fancy_array = b[[1, 0, 4, 2]]  # copy
+    c = fancy_array[:]
+
+    print(fancy_array)
+    print(c)
+
+
+if __name__ == "__main__":
+    main()
