@@ -7,11 +7,11 @@
 ## 📊 PROGESSO DOS MÓDULOS 📊
 
 ### 1. Fundamentos da Manipulação de Dados com Python
-* **Status:** `⏳ Em andamento`
+* **Status:** `⏳ Completo`
 * **O que estou aprendendo:** (List Comprehensions, Map, Lambda, Numpy, Regex...)
 
 ### 2. Processamento Básico de Dados com Pandas
-* **Status:** `📋 A planejar`
+* **Status:** `📋 Em andamento`
 * **O que vou aprender:** (Ainda não cheguei...)
 
 ### 3. Mais Processamento de Dados com Pandas
@@ -31,11 +31,11 @@
 ## 📊 Module Progress 📊
 
 ### 1. Foundations of Data Manipulation with Python
-* **Status:** `⏳ In Progress`
+* **Status:** `⏳ Complete`
 * **What I'm learning:** (List Comprehensions, Map, Lambda, Numpy, Regex...)
 
 ### 2. Basic Data Processing with Pandas
-* **Status:** `📋 Planned`
+* **Status:** `📋 In progress`
 * **What I will learn:** (I haven't reached yet...)
 
 ### 3. More Data Processing with Pandas
